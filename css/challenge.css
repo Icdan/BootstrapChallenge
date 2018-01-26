@@ -1,0 +1,23 @@
+h1, h2, h3 {
+    font-family: 'Freckle Face', cursive;
+}
+
+body, p, a {
+    font-family: 'Alegreya', serif;
+    font-size: 20px;
+}
+
+.active {
+    background-color: #000000;
+}
+
+.thumbnail {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 36%;
+    left: 0;
+    width: 32%;
+}

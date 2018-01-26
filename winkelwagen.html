@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/challenge.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya|Freckle+Face" rel="stylesheet">
+
+    <title>Winkelwagenje</title>
+
+</head>
+<!--
+* naam: Liam Jansen
+* groep: 7a
+* datum: 26-01-2018
+-->
+<body>
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">CandyShop</a>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="webshop.html">Webshop</a>
+            <a class="nav-item nav-link active" href="winkelwagen.html">Winkelwagentje</a>
+        </div>
+    </div>
+</nav>
+<div class="row" id="box-search">
+    <div class="thumbnail text-center">
+        <img src="img/candy_head.jpg" alt="" class="img-responsive">
+        <div class="caption">
+            <h1>CandyShop</h1>
+            <p>Winkelwagentje</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-3"></div>
+        <div class="col-3">
+            <p>Aantal:</p>
+        </div>
+        <div class="col-3">
+            <p>Subtotaal:</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <img class="img-fluid" src="img/smarties.jpg"/>
+        </div>
+        <div class="col-3">
+            <h3>Smarties</h3>
+
+            <p>prijs per 100 gram: €1,50</p>
+        </div>
+        <div class="col-3">
+            <input class="col-9" type="number" id="input1">
+        </div>
+        <div class="col-3">
+            <p>0</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <img class="img-fluid" src="img/candy6.jpg"/>
+        </div>
+        <div class="col-3">
+            <h3>Zure Slungels</h3>
+
+            <p>prijs per 100 gram: €1,55</p>
+        </div>
+        <div class="col-3">
+            <input class="col-9" type="number" id="input2">
+        </div>
+        <div class="col-3">
+            <p>0</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <img class="img-fluid" src="img/candy7.jpg"/>
+        </div>
+        <div class="col-3">
+            <h3>Partijtje Pastelsnoep</h3>
+
+            <p>prijs per 100 gram: €1,45</p>
+        </div>
+        <div class="col-3">
+            <input class="col-9" type="number" id="input3">
+        </div>
+        <div class="col-3">
+            <p>0</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <p class="ml-3">Extra bestellen...</p>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col">
+            <form>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" id="checkmark1" class="form-check-input">
+                        In feestelijke snoepemmer (€1,50)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" id="checkmark2" class="form-check-input mb-4">
+                        Met elektrische tandenborstel (€24,95)
+                    </label>
+                </div>
+                <fieldset class="form-group">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1"
+                                   value="option1" checked>
+                            Zelf ophalen (Gratis!)
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2"
+                                   value="option2">
+                            Laten bezorgen (€4,95)
+                        </label>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-3"></div>
+        <div class="col-3"></div>
+        <div id="totaalbedrag3" class="col-3">
+            Totaal:
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-3"></div>
+        <div class="col-3">
+            <button type="button" onclick="bereken()">Bereken totaal</button>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>
+
+<p class="mt-4 ml-5">© 2018 Company, Inc.</p>
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+<script src="js/challenge.js"></script>
+</body>
+</html>
